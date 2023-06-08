@@ -8,7 +8,7 @@ def parse():
     print(page.status_code)
     faculties = []
     allFaculties = []
-    file = open('result.txt', 'w')
+    file = open('output.txt', 'w')
     soup = BeautifulSoup(page.text, "html.parser")
     allFaculties = soup.find_all('div', id='pagecontent')
 
